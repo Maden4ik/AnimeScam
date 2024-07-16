@@ -1,0 +1,2 @@
+# AnimeScam
+Funny file
