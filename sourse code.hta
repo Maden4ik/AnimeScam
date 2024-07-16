@@ -1,0 +1,137 @@
+<html><head><base href="" /><title>h-hi~</title><meta http-equiv="x-ua-compatible" content="ie=edge">
+<hta:application
+    applicationname="h-hi! C-can you enter your court details h-here?"
+    border="thin"
+    borderstyle="normal"
+    caption="no"
+    contextmenu="no"
+    innerborder="no"
+    maximizebutton="no"
+    minimizebutton="no"
+    navigable="no"
+    scroll="no"
+    scrollflat="yes"
+    selection="no"
+    showintaskbar="yes"
+    singleinstance="yes"
+    sysmenu="no"
+    windowstate="normal">
+</hta:application>
+<style>
+    body {
+        font-family: "MS Sans Serif", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #C0C0C0;
+        color: #000000;
+        overflow: hidden;
+    }
+    .window {
+        border: 2px solid;
+        border-top-color: #DFDFDF;
+        border-left-color: #DFDFDF;
+        border-right-color: #808080;
+        border-bottom-color: #808080;
+        background-color: #C0C0C0;
+        box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;
+        padding: 3px;
+        width: 500px;
+        height: 300px;
+    }
+    .content {
+        display: flex;
+        padding: 10px;
+        height: calc(100% - 20px);
+    }
+    .gif-container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: inset 2px;
+        margin-right: 10px;
+        background-color: white;
+    }
+    .form-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .question {
+        margin-bottom: 10px;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 3px;
+        margin-top: 5px;
+        border: inset 2px;
+    }
+    button {
+        padding: 5px;
+        background-color: #C0C0C0;
+        color: black;
+        border: 2px solid;
+        border-top-color: #DFDFDF;
+        border-left-color: #DFDFDF;
+        border-right-color: #808080;
+        border-bottom-color: #808080;
+        cursor: pointer;
+        font-family: "MS Sans Serif", Arial, sans-serif;
+    }
+    button:active {
+        border: 2px solid;
+        border-top-color: #808080;
+        border-left-color: #808080;
+        border-right-color: #DFDFDF;
+        border-bottom-color: #DFDFDF;
+    }
+</style>
+</head>
+<body>
+    <div class="window">
+        <div class="content">
+            <div class="gif-container">
+                <img src="https://media1.tenor.com/m/iRNaulOy6YMAAAAC/anime-cute.gif" alt="Anime GIF" width="100%" height="auto">
+            </div>
+            <div class="form-container">
+                <div>
+                    <div class="question">
+                        <label for="question1">Your credit card number:</label>
+                        <input type="text" id="question1" name="question1">
+                    </div>
+                    <div class="question">
+                        <label for="question2">Credit card date:</label>
+                        <input type="text" id="question2" name="question2">
+                    </div>
+                    <div class="question">
+                        <label for="question3">CVV code</label>
+                        <input type="text" id="question3" name="question3">
+                    </div>
+                </div>
+                <button onclick="submitForm()">T-thank you!</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function submitForm() {
+            var q1 = document.getElementById('question1').value;
+            var q2 = document.getElementById('question2').value;
+            var q3 = document.getElementById('question3').value;
+            
+            alert('Get scammed lol :3');
+            
+            // Close the application after showing the alert
+            window.close();
+        }
+
+        // Set fixed window size and prevent resizing
+        window.resizeTo(525, 348);
+        window.onresize = function() {
+            window.resizeTo(525, 348);
+        };
+    </script>
+</body>
+</html>
